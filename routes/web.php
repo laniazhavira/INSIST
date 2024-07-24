@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\DocumentController;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ClientController;
 
 Route::get('/laravel', function () {
     return ['Laravel' => app()->version()];
@@ -38,6 +38,14 @@ Route::get('/activity', [PageController::class, 'activity'])->name('activity.act
 Route::get('/attendance', [PageController::class, 'attendance'])->name('attendance.attendance');
 Route::get('/document', [PageController::class, 'document'])->name('document.document');
 Route::get('/tracker', [PageController::class, 'tracker'])->name('tracker');
+
+Route::get('/activity/client', [ClientController::class, 'index'])->name('activity.client.index');
+Route::post('/activity/client', [ClientController::class, 'store'])->name('activity.client.store');
+Route::put('/activity/client/{id}', [ClientController::class, 'update'])->name('activity.client.update');
+Route::delete('/activity/client/{id}', [ClientController::class, 'destroy'])->name('activity.client.destroy');
+Route::get('/activity/client/{id}', [ClientController::class, 'show'])->name('activity.client.show')->middleware('auth');
+
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/activity', [ActivityController::class, 'index'])->name('activity.index');

@@ -60,23 +60,23 @@
         <div class="services">
             <div class="service-box">
                 <div class="box">
-                    <a href="{{ route('activity.index') }}">
+                    <a href="{{ route('activity.client.index') }}">
+                        <i class="fa-solid fa-house"></i>
+                        <h3>Client List</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="{{ route('activity.client.index') }}">
                         <i class="fa-solid fa-house"></i>
                         <h3>Task List</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="{{ route('attendance') }}">
-                        <i class="fa-solid fa-handshake-simple"></i>
-                        <h3>Timeline Project</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="{{ route('document') }}">
+                    <a href="{{ route('activity.client.index') }}">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
-                        <h3>Project Table</h3>
+                        <h3>Project List</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>
                     </a>
                 </div>

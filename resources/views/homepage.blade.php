@@ -75,14 +75,14 @@
                     </a>
                 </div>
                 <div class="box">
-                    <a href="{{ route('attendance') }}">
+                    <a href="{{ route('attendance.index') }}">
                         <i class="fa-solid fa-handshake-simple"></i>
                         <h3>Attendance</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="{{ route('document') }}">
+                    <a href="{{ route('document.index') }}">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
                         <h3>Document</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque recusandae ad asperiores beatae, atque quo!</p>

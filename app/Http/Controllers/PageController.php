@@ -9,6 +9,11 @@ class PageController extends Controller
     public function activity()
     {
         return view('activity.activity');
+
+    }
+    public function client()
+    {
+        return view('client.index');
     }
 
     public function attendance()
